@@ -1,16 +1,11 @@
 {
     "name": "Dog App",
-    "short_name": "DogApp",
-    "description": "A test App for my project",
     "start_url": "./",
     "display": "standalone",
-    "theme_color": "#eeffee",
-    "background_color": "#eeffee",
     "icons": [
         {
-            "src": "./assets/icons/download.png",
-            "size": "512x512",
-            "type": "image/png"
+            "src": "./src/assets/icons/downloads-512.png",
+            "sizes": "512x512"
         }
     ]
 }

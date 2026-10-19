@@ -2,6 +2,8 @@
     "name": "Dog App",
     "short_name": "DogApp",
     "description": "A test App for my project",
-    "scope": "./",
-    "display": "standalone"
+    "start_url": "./",
+    "display": "standalone",
+    "theme_color": "#eeffee",
+    "background_color": "#eeffee"
 }

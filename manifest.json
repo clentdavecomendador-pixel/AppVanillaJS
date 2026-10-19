@@ -1,9 +1,11 @@
 {
-    "short_name": "AppVanillaJS",
+    "name": "Dog App",
+    "short_name": "DogApp",
+    "description": "A test App for my project",
     "scope": "./",
     "icons": [
         {
-            "src": "dog.png",
+            "src": "/icons/dog.png",
             "sizes": "512x512"
         }
     ],

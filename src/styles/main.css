@@ -11,10 +11,16 @@ img{
 }
 
 header{
-    display: flex;
-    gap: 50rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 2rem;
     padding: 2rem;
     background-color: cornflowerblue;
+}
+h1{
+    text-align: center;
+    margin: 0;
 }
 
 .headerLogo{

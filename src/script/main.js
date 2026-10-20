@@ -1,5 +1,10 @@
 import { fetchData } from "./fetch.js";
 
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+    console.log("App: service worker registered")
+}
+
 
 const app = document.getElementById("app")
 

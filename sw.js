@@ -15,7 +15,7 @@ const FILES = [
 
 // Step 1. Install: saves the files in cache
 self.addEventListener("install", (event) => {
-    console.log("Service worker: installed")
+    console.log("Service worker: install")
 
     event.waitUntil(
         caches.open(CACHE).then((cache) => cache.addAll(FILES))
@@ -24,14 +24,13 @@ self.addEventListener("install", (event) => {
 
 // Step 2. Activate: service worker is activate and it is ready to be use.
  // Remember to close all open tabs in your browser to activate a new service worker.
-self.addEventListener("active", () => {
-    console.log("Service worker: activated");
+self.addEventListener("activate", () => {
+    console.log("Service worker: activate");
 });
 
 // Step 3. Fetch: strategy cache first, where we first checks if the files exist in cache, if not we fetch it from the network
 self.addEventListener("fetch", (event) => {
-    console.log("Service worker: event", event)
-    console.log("Service worker: fetched", event.request.url)
+    console.log("Service worker: fetch", event.request.url)
 
     event.respondWith(
 

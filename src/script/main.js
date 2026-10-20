@@ -11,7 +11,7 @@ const app = document.getElementById("app")
 const header = document.createElement("header")
 
 const h1 = document.createElement("h1");
-h1.textContent = "My Dog"
+h1.textContent = "Dogs"
 
 const logo = document.createElement("img")
 logo.className = "headerLogo"

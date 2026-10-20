@@ -1,5 +1,8 @@
-fetch("https://dog.ceo/api/breeds/image/random")
- .then((response) => response.json())
- .then((data) => {
-    console.log(data)
- })
+const api = "https://dog.ceo/api/breeds/image/random"
+ 
+export const fetchData = async () => {
+   const response = await fetch(api)
+   const data = await response.json()
+   console.log(data)
+   return data;
+}

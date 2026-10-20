@@ -4,7 +4,7 @@
     "display": "standalone",
     "icons": [
         {
-            "src": "./src/assets/icons/downloads-512.png",
+            "src": "./src/assets/icons/paw.png",
             "sizes": "512x512"
         }
     ]
